@@ -75,6 +75,7 @@ public class ToolCon : MonoBehaviour
                         return;
                     }
 
+                    
                     var crop = cropsManager.GetCropAtPosition(chosenTilePosition);
                     if (crop is { CanHarvest: true })
                     {
