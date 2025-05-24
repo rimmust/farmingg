@@ -26,6 +26,11 @@ public class ToolCon : MonoBehaviour
     
     //sounds
     [SerializeField] AudioClip PlowSound;
+    
+    //sounds
+    [SerializeField] AudioClip HarvestSound;
+    
+    
 
     private void Update()
     {
@@ -82,6 +87,8 @@ public class ToolCon : MonoBehaviour
                         cropsManager.RemoveSeed(chosenTilePosition);
                         tileMapReadController.SetTile(chosenTilePosition, plowableTile.plowedTile);
                         
+                        //add sound 
+                        AudioSource.PlayClipAtPoint(HarvestSound, Camera.main.transform.position);
                         // Add the crop to the inventory
                         AddToInventory(crop.yieldCrop, _itemHolder); // null has to be the inventory
                         return;
@@ -113,6 +120,7 @@ public class ToolCon : MonoBehaviour
     public  void AddToInventory(Itemtos itemToAdd, ItemHolder inventory)
     {
         inventory.AddToInventoryCount(itemToAdd);
+       
     }
 
   // private void PickUpTile()

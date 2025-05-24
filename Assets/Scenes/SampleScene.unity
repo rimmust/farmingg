@@ -7451,6 +7451,7 @@ MonoBehaviour:
   _itemHolder: {fileID: 11400000, guid: 59557f209e48cc546a06e9942e4daf16, type: 2}
   CropSound: {fileID: 8300000, guid: 33fb1ac61f95a644c9a83696bdd21d9c, type: 3}
   PlowSound: {fileID: 8300000, guid: 06e7211998161084ca8d05b611ef8716, type: 3}
+  HarvestSound: {fileID: 8300000, guid: 4fd3567ec791a2a4bbd22d7a6ffff307, type: 3}
 --- !u!114 &2081043334 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7040846405539669099, guid: 241a9281bcbf7924384b56b078c47749, type: 3}
