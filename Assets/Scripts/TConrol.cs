@@ -98,7 +98,7 @@ public class TConrol : MonoBehaviour
     {
         //divide the time in phase lenght
         int cuphase = (int)(time/phaseLenght);
-      //  Debug.Log(cuphase);
+      
       
         //compare old phase with current phase and invoke all phases
         if (prevoPhase != cuphase)

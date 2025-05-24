@@ -103,7 +103,7 @@ public class ToolCon : MonoBehaviour
             
         }
 
-      //  PickUpTile();
+     
 
 
     }
@@ -123,5 +123,6 @@ public class ToolCon : MonoBehaviour
          //  onTilePickUp.onApplyToTileMap(chosenTilePosition, tileMapReadController, null);
        //}
    //}
-    
+
+  
 }

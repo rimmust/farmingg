@@ -34,6 +34,6 @@ MonoBehaviour:
   m_InstancedGameObject: {fileID: 0}
   m_Flags: 1
   m_ColliderType: 1
-  timeToGrow: 2
+  timeToGrow: 4
   next: {fileID: 11400000, guid: 6a8e19511a854754cb664524e9b6eb1d, type: 2}
-  yield: {fileID: 0}
+  yieldCrop: {fileID: 0}

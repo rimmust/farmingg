@@ -21,7 +21,7 @@ public class TimeA : MonoBehaviour
 
     public void Init()
     {
-        Debug.Log(GameManager.instance.timeControl);
+      //  Debug.Log(GameManager.instance.timeControl);
       //  subscribe time agent to the TControl
        GameManager.instance.timeControl.Subscribe(this);
     }

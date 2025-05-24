@@ -10,7 +10,7 @@ public class MarkersM : MonoBehaviour
     
     //mark the tile we are hoovering on
     [SerializeField]  Tilemap hooverTilemap;
-    [SerializeField] TileBase tile; // issuse
+    [SerializeField] TileBase tile; 
     public  Vector3Int markerPosition;
     Vector3Int lastMarkerPosition;
     bool show;

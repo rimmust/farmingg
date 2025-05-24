@@ -21,7 +21,6 @@ public class ItemHolder : ScriptableObject
     {
         //determine is this new item and stackable 
         //find empty slot an dput it in the slot
-        //this can be removed from 27:00
      
         if (item.avaible == true)
         {
@@ -61,4 +60,6 @@ public class ItemHolder : ScriptableObject
         }
         
     }
+    
+    
 }
