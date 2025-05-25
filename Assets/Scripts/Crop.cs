@@ -1,6 +1,6 @@
 public class Crop
 {
-    // 22/05/25  these should go there
+    
     //scripatble object Crop
     public int timeToGrow = 10;
 
@@ -13,3 +13,4 @@ public class Crop
 
     public bool CanHarvest => yieldCrop != null && growTimer >= timeToGrow;
 }
+
