@@ -1,3 +1,4 @@
+using System;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Tilemaps;
@@ -20,7 +21,6 @@ public class ToolCon : MonoBehaviour
     private TileBase chosenTile;
     private bool selected;
     
-    
     //sounds
     [SerializeField] AudioClip CropSound;
     
@@ -30,8 +30,7 @@ public class ToolCon : MonoBehaviour
     //sounds
     [SerializeField] AudioClip HarvestSound;
     
-    
-
+   
     private void Update()
     {
         ChoseTile();
@@ -87,11 +86,17 @@ public class ToolCon : MonoBehaviour
                         cropsManager.RemoveSeed(chosenTilePosition);
                         tileMapReadController.SetTile(chosenTilePosition, plowableTile.plowedTile);
                         
+                        //try doing the code here
+                      
+                        
+                        
                         //add sound 
                         AudioSource.PlayClipAtPoint(HarvestSound, Camera.main.transform.position);
                         // Add the crop to the inventory
                         AddToInventory(crop.yieldCrop, _itemHolder); // null has to be the inventory
+                        //add the progress Bar value
                         return;
+                        
                     }
                 }
                 
@@ -120,6 +125,7 @@ public class ToolCon : MonoBehaviour
     public  void AddToInventory(Itemtos itemToAdd, ItemHolder inventory)
     {
         inventory.AddToInventoryCount(itemToAdd);
+        
        
     }
 

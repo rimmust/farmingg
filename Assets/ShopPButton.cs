@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InventoryPButton : MonoBehaviour
+public class ShopPButton : MonoBehaviour
 {
     [SerializeField] GameObject panel;
     // Start is called before the first frame update
 
     //sounds
-    [SerializeField] AudioClip ClickSound;
+  //  [SerializeField] AudioClip ClickSound;
     
     //open panel
     public void Openpanel()
@@ -16,7 +16,7 @@ public class InventoryPButton : MonoBehaviour
         if (panel != null)
         {
             //play sound
-            AudioSource.PlayClipAtPoint(ClickSound, Camera.main.transform.position);
+          //  AudioSource.PlayClipAtPoint(ClickSound, Camera.main.transform.position);
             bool opened = panel.activeSelf;
             panel.SetActive(!opened);
             //  panel.SetActive(true);
@@ -25,3 +25,4 @@ public class InventoryPButton : MonoBehaviour
         
     }
 }
+
