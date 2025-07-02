@@ -95,6 +95,7 @@ public class ToolCon : MonoBehaviour
                         // Add the crop to the inventory
                         AddToInventory(crop.yieldCrop, _itemHolder); // null has to be the inventory
                         //add the progress Bar value
+                        FindObjectOfType<CProgBar>().HarvestCrops();
                         return;
                         
                     }
