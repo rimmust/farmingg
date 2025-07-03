@@ -15,7 +15,10 @@ public class ShopM : MonoBehaviour
     
     //the text
     public TextMeshProUGUI CoinsTxt;
+   
     
+    //sounds
+    [SerializeField] AudioClip CoinSound;
     
     // Start is called before the first frame update
     void Start()
@@ -65,6 +68,9 @@ public class ShopM : MonoBehaviour
             //update the quantity button text 
             ButtonRef.GetComponent<ButtonInfo>().QuantityText.text =  shopItems[3, ButtonRef.GetComponent<ButtonInfo>().ItemID].ToString();
 
+            //play sound
+            AudioSource.PlayClipAtPoint(CoinSound, Camera.main.transform.position);
+            
         }
     }
 }
