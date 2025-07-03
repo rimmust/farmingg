@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class TConrol : MonoBehaviour
 {
@@ -12,6 +13,14 @@ public class TConrol : MonoBehaviour
     private const float phaseLenght = 900f;
     
     private int days;
+    
+    
+    //colors 3/7/25
+    [SerializeField] Color nightLColor;
+    [SerializeField] AnimationCurve  nightTCurve;
+    [SerializeField] Color dayLightLColor  =Color.white;
+    
+    [SerializeField] Light2D globalLight2D;
     
     //21/05/25
     //list of the agents 
@@ -76,6 +85,11 @@ public class TConrol : MonoBehaviour
         }
 
         TimeAgents();
+        
+        //colors 3/7/25
+        float v = nightTCurve.Evaluate(Hours);
+        Color c = Color.Lerp(dayLightLColor, nightLColor, v);
+        globalLight2D.color = c;
         
     }
     
